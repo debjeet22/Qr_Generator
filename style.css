@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #add8e6; /* Light blue background */
+}
+
+.container {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 100%;
+  max-width: 450px; /* Prevents container from becoming too wide */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 24px; /* Adjusted font size for mobile */
+}
+
+p {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 16px; /* Adjusted font size for mobile */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+input[type="text"], select, input[type="color"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+canvas {
+  margin-top: 15px;
+  border: 5px solid #ddd;
+  border-radius: 10px;
+  display: block;
+  width: 100%; /* Make canvas responsive */
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px; /* Reduce title size on small screens */
+  }
+
+  p {
+    font-size: 14px; /* Adjust paragraph size for mobile */
+  }
+
+  .container {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  .form-group {
+    margin-bottom: 10px; /* Less space between form elements */
+  }
+
+  button {
+    font-size: 14px; /* Smaller button text */
+  }
+
+  footer {
+    font-size: 12px; /* Smaller footer text */
+  }
+}
